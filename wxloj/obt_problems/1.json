@@ -1,0 +1,56 @@
+{
+    "id":"T1001",
+    "name":"测试送分卷",
+    "display_point":{
+        "display":true,
+        "color":"#0000FF",
+        "left":"(本题 ",
+        "right":" 分)"
+    },
+    "problem":[
+        {
+            "type":"radio",
+            "problem":"1.这是一个普通的选择题，请选择A",
+            "point":4,
+            "options":[
+                "A.选我",
+                "B.别选我",
+                "C.别选我",
+                "D.别选我"
+            ]
+        },
+        {
+            "type":"radio",
+            "problem":"2.这是一个多行选择题，请选择A<br>我是文字",
+            "point":4,
+            "options":[
+                "<br>A.<br>选我<br>我是文字",
+                "<br>B.<br>别选我<br>我是文字",
+                "<br>C.<br>别选我<br>我是文字",
+                "<br>D.<br>别选我<br>我是文字"
+            ]
+        },
+        {
+            "type":"checkbox",
+            "problem":"3.这是一个用了markdown的多选题（判卷方式：完全相同得分，否则不得分），请全选 \n\n# 阿巴阿巴\n\n ```\n我是代码\n我是代码\n```",
+            "point":4,
+            "options":[
+                "A.选我",
+                "B.选我",
+                "C.选我",
+                "D.选我"
+            ]
+        },
+        {
+            "type":"checkbox",
+            "problem":"4.$a+b=c$这是一个用了latex的多选题（判卷方式：有错误0分，完全相同满分，否则2分），请选择ABC",
+            "point":4,
+            "options":[
+                "A.选我",
+                "B.别选我",
+                "C.别选我",
+                "D.别选我"
+            ]
+        }
+    ]
+}
